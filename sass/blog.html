@@ -1,0 +1,1365 @@
+<html lang="en" className="dark set-color-team-current-unknown">
+<head>
+    <meta charSet="utf-8">
+    <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
+    <meta content="#1F2028" name="theme-color">
+    <title>The Kent C. Dodds Blog</title>
+    <meta content="Join 205.03k people who have read Kent's 190 articles on JavaScript, TypeScript, React, Testing, Career, and more."
+          name="description">
+    <meta content="JavaScript, TypeScript, React, Testing, Career, Software Development, Kent C. Dodds Blog"
+          name="keywords">
+    <meta content="https://kentcdodds.com/img/social?type=2&amp;title=Priceless+insights%2C+ideas%2C+and+experiences+for+your+dev+work&amp;preTitle=Check+out+this+Blog&amp;img=kentcdodds.com%2Fillustrations%2Fskis_z5lkc3&amp;url=kentcdodds.com%2Flogin"
+          name="image">
+    <meta content="https://kentcdodds.com/login" property="og:url">
+    <meta content="The Kent C. Dodds Blog" property="og:title">
+    <meta content="Join 205.03k people who have read Kent's 190 articles on JavaScript, TypeScript, React, Testing, Career, and more."
+          property="og:description">
+    <meta content="https://kentcdodds.com/img/social?type=2&amp;title=Priceless+insights%2C+ideas%2C+and+experiences+for+your+dev+work&amp;preTitle=Check+out+this+Blog&amp;img=kentcdodds.com%2Fillustrations%2Fskis_z5lkc3&amp;url=kentcdodds.com%2Flogin"
+          property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="@kentcdodds" name="twitter:creator">
+    <meta content="@kentcdodds" name="twitter:site">
+    <meta content="The Kent C. Dodds Blog" name="twitter:title">
+    <meta content="Join 205.03k people who have read Kent's 190 articles on JavaScript, TypeScript, React, Testing, Career, and more."
+          name="twitter:description">
+    <meta content="https://kentcdodds.com/img/social?type=2&amp;title=Priceless+insights%2C+ideas%2C+and+experiences+for+your+dev+work&amp;preTitle=Check+out+this+Blog&amp;img=kentcdodds.com%2Fillustrations%2Fskis_z5lkc3&amp;url=kentcdodds.com%2Flogin"
+          name="twitter:image">
+    <meta content="The Kent C. Dodds Blog" name="twitter:alt">
+    <link rel="canonical" href="https://kentcdodds.com/login">
+    <link rel="preload" as="font" href="/fonts/Matter-Medium.woff2" type="font/woff2" crossOrigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/Matter-Regular.woff2" type="font/woff2" crossOrigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/build/_assets/vendors-EFOY5CRR.css">
+    <link rel="stylesheet" href="/build/_assets/tailwind-63JOLBJ7.css">
+    <link rel="stylesheet" href="/build/_assets/prose-KMWPCMLN.css">
+    <link rel="stylesheet" href="/build/_assets/app-RWXCJFGO.css">
+    <script id="fathom-script" async="" data-site="HJUUDKMT" src="https://sailfish.kentcdodds.com/script.js"
+            data-excluded-domains="localhost" data-spa="history"></script>
+    <script>!function () {
+        var e, t, n, i, r = {passive: !0, capture: !0}, a = new Date, o = function () {
+            i = [], t = -1, e = null, f(addEventListener)
+        }, c = function (i, r) {
+            e || (e = r, t = i, n = new Date, f(removeEventListener), u())
+        }, u = function () {
+            if (t >= 0 && t < n - a) {
+                var r = {
+                    entryType: "first-input",
+                    name: e.type,
+                    target: e.target,
+                    cancelable: e.cancelable,
+                    startTime: e.timeStamp,
+                    processingStart: e.timeStamp + t
+                };
+                i.forEach((function (e) {
+                    e(r)
+                })), i = []
+            }
+        }, s = function (e) {
+            if (e.cancelable) {
+                var t = (e.timeStamp > 1e12 ? new Date : performance.now()) - e.timeStamp;
+                "pointerdown" == e.type ? function (e, t) {
+                    var n = function () {
+                        c(e, t), a()
+                    }, i = function () {
+                        a()
+                    }, a = function () {
+                        removeEventListener("pointerup", n, r), removeEventListener("pointercancel", i, r)
+                    };
+                    addEventListener("pointerup", n, r), addEventListener("pointercancel", i, r)
+                }(t, e) : c(t, e)
+            }
+        }, f = function (e) {
+            ["mousedown", "keydown", "touchstart", "pointerdown"].forEach((function (t) {
+                return e(t, s, r)
+            }))
+        }, p = "hidden" === document.visibilityState ? 0 : 1 / 0;
+        addEventListener("visibilitychange", (function e(t) {
+            "hidden" === document.visibilityState && (p = t.timeStamp, removeEventListener("visibilitychange", e, !0))
+        }), !0);
+        o(), self.webVitals = {
+            firstInputPolyfill: function (e) {
+                i.push(e), u()
+            }, resetFirstInputPolyfill: o, get firstHiddenTime() {
+                return p
+            }
+        }
+    }();
+    </script>
+    <script src="/__metronome/metronome-5.4.1.js" defer=""></script>
+    <noscript>
+        <link rel="stylesheet" href="/build/_assets/no-script-QWNGY5Q7.css"/>
+    </noscript>
+    <meta name="color-scheme" content="dark light">
+</head>
+<body className="bg-white transition duration-500 dark:bg-gray-900">
+<div className="px-5vw py-9 lg:py-12">
+    <nav className="text-primary mx-auto flex max-w-8xl items-center justify-between">
+        <div>
+            <a className="text-primary underlined focus:outline-none block whitespace-nowrap text-2xl font-medium transition"
+               href="/"><h1>Kent C. Dodds</h1></a>
+            <link rel="prefetch" as="fetch" href="/?_data=routes%2Findex">
+            <link rel="modulepreload" href="/build/routes/index-T5PS4FSB.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-XZWU5TF3.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-7QYR645I.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-PR2KVRXP.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-SPWAP6F7.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-2J53ZOLN.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-PSVAWMPQ.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-4XQDF5J4.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-IIXSBRE3.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-MD4B2H22.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-6LW2A7YY.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-U2C43ZRT.js">
+        </div>
+        <ul className="hidden lg:flex">
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current active text-team-current"
+                    href="/blog">Blog</a></li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/courses">Courses</a>
+                <link rel="prefetch" as="fetch" href="/courses?_data=routes%2Fcourses">
+                <link rel="modulepreload" href="/build/routes/courses-5TJNUEFS.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-LYTPSCUF.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-6LW2A7YY.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-G7U5XJI2.js">
+            </li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/discord">Discord</a>
+                <link rel="prefetch" as="fetch" href="/discord?_data=routes%2Fdiscord">
+                <link rel="modulepreload" href="/build/routes/discord-RUW5F764.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-SPWAP6F7.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-HJH2JGMX.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-2J53ZOLN.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-X7IQYKJ2.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-LYTPSCUF.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-MD4B2H22.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-6LW2A7YY.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-G7U5XJI2.js">
+            </li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/chats/04">Chats</a></li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/calls">Calls</a></li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/workshops">Workshops</a>
+                <link rel="prefetch" as="fetch" href="/workshops?_data=routes%2Fworkshops">
+                <link rel="modulepreload" href="/build/routes/workshops-CBODZWL3.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-KQXLMX2T.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-J4X7X7ZI.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-YTN3S3DN.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-PX7JYETV.js">
+                <link rel="modulepreload" href="/build/routes/workshops/index-WKK6DRJD.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-MD4B2H22.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-6LW2A7YY.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-IX4U3IOV.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-N7PU7OX3.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-CSGQV53R.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-6DXVFXZU.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-AO5ZYW3K.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-XA3Z4COF.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-LMUNM6RL.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-4NX542KI.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-A5KPTDPP.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-4TL567D4.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-BDIW2EBY.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-SWQWOU4E.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-IIXQHP3C.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-K75YPN74.js">
+            </li>
+            <li className="px-5 py-2"><a
+                    className="underlined focus:outline-none block whitespace-nowrap text-lg font-medium hover:text-team-current focus:text-team-current text-secondary"
+                    href="/about">About</a>
+                <link rel="prefetch" as="fetch" href="/about?_data=routes%2Fabout">
+                <link rel="modulepreload" href="/build/routes/about-QFBV5SEV.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-XZWU5TF3.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-7QYR645I.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-HJH2JGMX.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-MMRD4WOM.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-IIXSBRE3.js">
+                <link rel="modulepreload" href="/build/_shared/chunk-VVOCNLH4.js">
+            </li>
+        </ul>
+        <div className="flex items-center justify-center">
+            <div className="block lg:hidden">
+                <button aria-haspopup="true" aria-controls="menu--1"
+                        className="focus:border-primary hover:border-primary border-secondary text-primary focus:outline-none inline-flex h-14 w-14 items-center justify-center rounded-full border-2 p-1 transition"
+                        id="menu-button--menu" type="button" data-reach-menu-button="">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="9" width="20" height="2" rx="1" fill="currentColor" transform-origin="0px 0px"
+                              style="transform: none; transform-origin: 0px 0px;"></rect>
+                        <rect x="6" y="15" width="20" height="2" rx="1" fill="currentColor" opacity="1"></rect>
+                        <rect x="6" y="21" width="20" height="2" rx="1" fill="currentColor" transform-origin="0px 0px"
+                              style="transform: none; transform-origin: 0px 0px;"></rect>
+                    </svg>
+                </button>
+            </div>
+            <div className="noscript-hidden hidden lg:block">
+                <button className="border-secondary hover:border-primary focus:border-primary focus:outline-none inline-flex h-14 items-center justify-center overflow-hidden rounded-full border-2 p-1 transition w-14">
+                    <div className="relative h-8 w-8"><span
+                            className="absolute inset-0 rotate-90 transform text-black transition duration-1000 motion-reduce:duration-[0s] dark:rotate-0 dark:text-white"
+                            style="transform-origin:50% 100px"><svg className="w-full" viewBox="0 0 32 32" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"><path
+                            fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.228 7.9439C10.5176 8.82869 7.75757 12.1054 7.75757 15.9987C7.75757 20.5716 11.5618 24.2919 16.2367 24.2919C19.2323 24.2919 21.9337 22.7699 23.4514 20.3585C23.2779 20.3676 23.1033 20.3722 22.9287 20.3722C17.7826 20.3722 13.5951 16.2772 13.5951 11.2435C13.5951 10.1032 13.8108 8.98914 14.228 7.9439M16.2367 26.4993C10.3171 26.4993 5.50037 21.7899 5.50037 15.9987C5.50037 10.2109 10.3171 5.49927 16.2367 5.49927C16.6598 5.49927 17.0501 5.72963 17.2435 6.09753C17.438 6.46428 17.4087 6.90668 17.1638 7.24363C16.3059 8.42297 15.8535 9.80631 15.8535 11.2435C15.8535 15.06 19.0272 18.1637 22.9287 18.1637C23.6483 18.1637 24.3573 18.0582 25.0359 17.8531C25.4378 17.7293 25.8785 17.8359 26.1738 18.1304C26.4715 18.425 26.5758 18.8559 26.4446 19.2467C25.0019 23.5847 20.9 26.4993 16.2367 26.4993"
+                            fill="currentColor"></path></svg></span><span
+                            className="absolute inset-0 rotate-0 transform text-black transition duration-1000 motion-reduce:duration-[0s] dark:-rotate-90 dark:text-white"
+                            style="transform-origin:50% 100px"><svg className="w-full" viewBox="0 0 32 32" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"><path
+                            fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0003 21.4194C13.0123 21.4194 10.5813 18.9874 10.5813 15.9994C10.5813 13.0114 13.0123 10.5804 16.0003 10.5804C18.9883 10.5804 21.4193 13.0114 21.4193 15.9994C21.4193 18.9874 18.9883 21.4194 16.0003 21.4194M16.0003 8.64136C11.9423 8.64136 8.64233 11.9414 8.64233 15.9994C8.64233 20.0574 11.9423 23.3574 16.0003 23.3574C20.0573 23.3574 23.3583 20.0574 23.3583 15.9994C23.3583 11.9414 20.0573 8.64136 16.0003 8.64136"
+                            fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd"
+                                                             d="M16.0004 7.08447C16.5364 7.08447 16.9704 6.64946 16.9704 6.11446V3.34546C16.9704 2.81046 16.5364 2.37646 16.0004 2.37646C15.4644 2.37646 15.0304 2.81046 15.0304 3.34546V6.11446C15.0304 6.64946 15.4644 7.08447 16.0004 7.08447"
+                                                             fill="currentColor"></path><path fill-rule="evenodd"
+                                                                                              clip-rule="evenodd"
+                                                                                              d="M6.11559 15.0298H3.34559C2.81059 15.0298 2.37659 15.4648 2.37659 15.9998C2.37659 16.5348 2.81059 16.9688 3.34559 16.9688H6.11559C6.65159 16.9688 7.08459 16.5348 7.08459 15.9998C7.08459 15.4648 6.65159 15.0298 6.11559 15.0298"
+                                                                                              fill="currentColor"></path><path
+                            fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0004 24.9146C15.4644 24.9146 15.0304 25.3496 15.0304 25.8846V28.6536C15.0304 29.1886 15.4644 29.6236 16.0004 29.6236C16.5364 29.6236 16.9704 29.1886 16.9704 28.6536V25.8846C16.9704 25.3496 16.5364 24.9146 16.0004 24.9146"
+                            fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd"
+                                                             d="M28.6542 15.0298H25.8842C25.3492 15.0298 24.9152 15.4648 24.9152 15.9998C24.9152 16.5348 25.3492 16.9688 25.8842 16.9688H28.6542C29.1902 16.9688 29.6242 16.5348 29.6242 15.9998C29.6242 15.4648 29.1902 15.0298 28.6542 15.0298"
+                                                             fill="currentColor"></path><path fill-rule="evenodd"
+                                                                                              clip-rule="evenodd"
+                                                                                              d="M22.9896 9.97995C23.2376 9.97995 23.4856 9.88495 23.6756 9.69595L24.7036 8.66795C25.0816 8.28995 25.0816 7.67495 24.7036 7.29595C24.3246 6.91795 23.7106 6.91795 23.3316 7.29595L22.3036 8.32495C21.9256 8.70295 21.9256 9.31695 22.3036 9.69595C22.4926 9.88495 22.7416 9.97995 22.9896 9.97995"
+                                                                                              fill="currentColor"></path><path
+                            fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.32507 9.69593C8.51407 9.88493 8.76207 9.97993 9.01107 9.97993C9.25907 9.97993 9.50707 9.88493 9.69607 9.69593C10.0751 9.31693 10.0751 8.70293 9.69607 8.32493L8.66807 7.29693C8.28907 6.91893 7.67507 6.91893 7.29707 7.29693C6.91807 7.67493 6.91807 8.28993 7.29707 8.66793L8.32507 9.69593Z"
+                            fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd"
+                                                             d="M8.32507 22.3043L7.29707 23.3313C6.91807 23.7093 6.91807 24.3243 7.29707 24.7023C7.48607 24.8923 7.73407 24.9873 7.98207 24.9873C8.23007 24.9873 8.47807 24.8923 8.66807 24.7023L9.69607 23.6753C10.0751 23.2973 10.0751 22.6833 9.69607 22.3043C9.31807 21.9253 8.70307 21.9253 8.32507 22.3043"
+                                                             fill="currentColor"></path><path fill-rule="evenodd"
+                                                                                              clip-rule="evenodd"
+                                                                                              d="M23.6752 22.3043C23.2962 21.9253 22.6822 21.9253 22.3032 22.3043C21.9252 22.6833 21.9252 23.2973 22.3042 23.6753L23.3322 24.7023C23.5212 24.8923 23.7692 24.9873 24.0182 24.9873C24.2662 24.9873 24.5142 24.8923 24.7032 24.7023C25.0822 24.3243 25.0822 23.7093 24.7032 23.3313L23.6752 22.3043Z"
+                                                                                              fill="currentColor"></path></svg></span>
+                    </div>
+                    <span className="ml-4 text-black dark:text-white sr-only">switch to light mode</span></button>
+            </div>
+            <a aria-label="Login"
+               className="focus:outline-none ml-4 inline-flex h-14 w-14 items-center justify-center rounded-full"
+               href="/login">
+                <div className="absolute" style="transform: rotate(725.024deg) translateZ(0px);">
+                    <svg height="56" width="56" viewBox="0 0 56 56">
+                        <path d="M29.465,0.038373A28,28,0,0,1,52.948,40.712L51.166,39.804A26,26,0,0,0,29.361,2.0356Z"
+                              className="text-team-yellow" fill="currentColor"></path>
+                        <path d="M51.483,43.250A28,28,0,0,1,4.5172,43.250L6.1946,42.161A26,26,0,0,0,49.805,42.161Z"
+                              className="text-team-blue" fill="currentColor"></path>
+                        <path d="M3.0518,40.712A28,28,0,0,1,26.535,0.038373L26.639,2.0356A26,26,0,0,0,4.8338,39.804Z"
+                              className="text-team-red" fill="currentColor"></path>
+                    </svg>
+                </div>
+                <img className="inline w-10 select-none rounded-full"
+                     src="https://res.cloudinary.com/kentcdodds-com/image/upload/q_auto,f_auto/kentcdodds.com/illustrations/kody_profile_white"
+                     alt="Kody Profile in White"></a>
+            <link rel="prefetch" as="fetch" href="/login?_data=routes%2Flogin">
+            <link rel="modulepreload" href="/build/routes/login-GZTFE7W2.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-YE662MG4.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-M74VROVB.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+            <link rel="modulepreload" href="/build/_shared/chunk-U2C43ZRT.js">
+        </div>
+    </nav>
+</div>
+<div className="set-color-team-current-red">
+    <header className="relative mx-10vw">
+        <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl lg: mb-24 h-auto pt-24 lg:min-h-[40rem] lg:pb-12 lg:mb-0">
+            <div className="col-span-full mb-12 lg:mb-0 px-10 lg:col-span-5 lg:col-start-7"><img
+                    className="h-auto w-full object-contain max-h-50vh" alt="Illustration of skis"
+                    src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_918,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3"
+                    srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/w_256,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 256w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_550,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 550w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_700,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 700w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_900,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 900w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_1300,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_1800,q_auto,f_auto/kentcdodds.com/illustrations/skis_z5lkc3 1800w"
+                    sizes="(max-width: 1023px) 80vw, (min-width: 1024px) and (max-width: 1279px) 50vw, (min-width: 1280px) 900px"
+                    style="opacity: 1; transform: none;"></div>
+            <div className="col-span-full pt-6 lg:col-start-1 lg:row-start-1 lg:flex lg:h-full lg:flex-col lg:col-span-5">
+                <div className="flex flex-auto flex-col" style="opacity: 1;">
+                    <div style="opacity: 1; transform: none;"><h2
+                            className="leading-tight text-3xl md:text-4xl text-black dark:text-white">Learn development
+                        with great articles.</h2></div>
+                    <div style="opacity: 1; transform: none;">
+                        <p className="leading-tight text-3xl md:text-4xl text-gray-400 dark:text-blueGray-500 mt-3">
+                            <span>Find the latest of my writing here.</span><a
+                                className="text-secondary underlined ml-2 inline-block hover:text-team-current focus:text-team-current"
+                                href="/blog/rss.xml">
+                            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><title>Get my blog as
+                                RSS</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.33465 15.52C6.23018 15.52 5.33459 16.4153 5.33459 17.5199C5.33459 18.6244 6.23018 19.5201 7.33465 19.5201C8.43912 19.5201 9.33471 18.6244 9.33471 17.5199C9.33471 16.4153 8.43912 15.52 7.33465 15.52Z"
+                                      fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.33472 10.52V13.0919C8.87972 13.0919 11.7639 15.9753 11.7639 19.5202H14.3347C14.3347 14.5577 10.2973 10.52 5.33472 10.52Z"
+                                      fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.33472 5.52002V8.18702C11.5846 8.18702 16.6688 13.2701 16.6688 19.52H19.3347C19.3347 11.8001 13.0546 5.52002 5.33472 5.52002Z"
+                                      fill="currentColor"></path>
+                            </svg>
+                        </a></p>
+                    </div>
+                    <div className="mt-14 flex flex-col space-y-4" style="opacity: 1; transform: none;">
+                        <div className="w-full">
+                            <form action="/blog" method="GET">
+                                <div className="relative">
+                                    <button title="Search" type="button"
+                                            className="absolute left-6 top-0 flex h-full items-center justify-center border-none bg-transparent p-0 text-blueGray-500 cursor-default">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M3.75068 11.3405C1.65161 9.23359 1.65161 5.80439 3.75068 3.69748C4.76756 2.67681 6.11976 2.11292 7.55689 2.11292C8.99619 2.11292 10.3484 2.67681 11.3653 3.69748C13.4622 5.80439 13.4622 9.23359 11.3653 11.3405C9.2662 13.4452 5.84975 13.4452 3.75068 11.3405ZM18 16.4548L13.595 12.0333C15.7986 9.06529 15.5874 4.8471 12.9047 2.15226C10.0479 -0.715235 5.06587 -0.719606 2.21121 2.15226C-0.737072 5.10937 -0.737072 9.9286 2.21121 12.8857C3.68536 14.3654 5.62112 15.1041 7.55906 15.1041C9.14861 15.1041 10.7229 14.5752 12.0555 13.5785L16.4605 18L18 16.4548Z"
+                                                  fill="currentColor"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="search" name="q" placeholder="Search posts"
+                                           className="text-primary bg-primary border-secondary focus:bg-secondary focus:outline-none w-full appearance-none rounded-full border py-6 pl-14 pr-6 text-lg font-medium hover:border-team-current focus:border-team-current md:pr-24"
+                                           value="">
+                                    <div className="absolute right-6 top-0 hidden h-full w-14 items-center justify-between text-lg font-medium text-blueGray-500 md:flex">
+                                        <input title="Showing all posts" aria-label="Showing all posts"
+                                               aria-checked="mixed" type="checkbox" data-reach-mixed-checkbox="">
+                                        <div className="flex-1"></div>
+                                        190
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div className="relative mx-10vw">
+        <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl mb-14">
+            <div className="relative col-span-full h-20">
+                <div className="absolute">
+                    <div className="group relative inline-flex h-8 flex-col justify-end set-color-team-current-unknown justify-end">
+                        <div className="absolute flex h-8 items-center gap-2 text-sm opacity-0 transition focus-within:opacity-100 group-hover:opacity-100 left-0 -top-9">
+                            <span title="Total reads" className="text-primary">308.61k </span><a
+                                className="text-secondary underlined hover:text-team-current focus:text-team-current"
+                                href="/teams#read-rankings">what's this?</a></div>
+                        <ul className="relative flex h-0 overflow-visible border-team-current px-4 border-t">
+                            <li className="h-0 overflow-visible">
+                                <button tabIndex="0" title="Rank of the red team"
+                                        className="focus:outline-none relative flex origin-right items-center justify-center"
+                                        style="width: 22px;">
+                                    <div className="relative flex justify-center rounded-b-md bg-team-red"
+                                         style="height: 36px; width: 16px; transform: none;"><span
+                                            className="text-primary absolute text-lg font-medium bottom-0"
+                                            style="opacity: 0; font-size: 0px; transform: none;">2.094</span></div>
+                                </button>
+                            </li>
+                            <li className="h-0 overflow-visible">
+                                <button tabIndex="0" title="Rank of the yellow team"
+                                        className="focus:outline-none relative flex origin-right items-center justify-center"
+                                        style="width: 22px;">
+                                    <div className="relative flex justify-center rounded-b-md bg-team-yellow"
+                                         style="height: 33.36px; width: 16px; transform: none;"><span
+                                            className="text-primary absolute text-lg font-medium bottom-0"
+                                            style="opacity: 0; font-size: 0px; transform: none;">2.089</span></div>
+                                </button>
+                            </li>
+                            <li className="h-0 overflow-visible">
+                                <button tabIndex="0" title="Rank of the blue team"
+                                        className="focus:outline-none relative flex origin-right items-center justify-center"
+                                        style="width: 22px;">
+                                    <div className="relative flex justify-center rounded-b-md bg-team-blue"
+                                         style="height: 12px; width: 16px; transform: none;"><span
+                                            className="text-primary absolute text-lg font-medium bottom-0"
+                                            style="opacity: 0; font-size: 0px; transform: none;">2.045</span></div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="col-span-full h-10 lg:h-12"></div>
+            <p className="max-w-full text-lg text-secondary col-span-full">The <strong
+                    className="text-team-current set-color-team-current-red">red</strong> team is in the lead. <a
+                    className="underlined" href="/login">Login or sign up</a> to choose your team!</p>
+            <div className="col-span-full h-20 lg:h-24"></div>
+            <div className="text-lg font-medium text-black dark:text-white col-span-full mb-6">Search blog by topics
+            </div>
+            <div className="col-span-full -mb-4 -mr-4 flex flex-wrap lg:col-span-10"><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="remix"><span>remix</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="react"><span>react</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="career"><span>career</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="personal"><span>personal</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="typescript"><span>typescript</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="user experience"><span>user experience</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="css"><span>css</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="testing"><span>testing</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="javascript"><span>javascript</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="productivity"><span>productivity</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="open source"><span>open source</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="review"><span>review</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="node"><span>node</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="programming"><span>programming</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="teaching"><span>teaching</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="state"><span>state</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="performance"><span>performance</span></label><label
+                    className="relative mb-4 mr-4 block h-auto w-auto cursor-pointer rounded-full px-6 py-3 transition text-primary bg-secondary focus-ring opacity-100"
+                    data-reach-custom-checkbox-container="" data-state="unchecked"><input className="sr-only"
+                                                                                          aria-checked="false"
+                                                                                          type="checkbox"
+                                                                                          data-reach-custom-checkbox-input=""
+                                                                                          value="learning"><span>learning</span></label>
+            </div>
+        </div>
+    </div>
+    <div className="mb-10">
+        <div className="w-full px-8 lg:px-0 set-color-team-current-yellow">
+            <div className="rounded-lg bg-gray-100 dark:bg-gray-800 lg:bg-transparent lg:dark:bg-transparent">
+                <div className="-mx-8 lg:mx-0">
+                    <div className="relative mx-10vw">
+                        <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl group rounded-lg pb-6 pt-14 md:pb-12 lg:bg-gray-100 lg:dark:bg-gray-800">
+                            <div className="col-span-full lg:col-span-5 lg:col-start-2 lg:flex lg:flex-col lg:justify-between">
+                                <div><h2 className="text-lg font-medium text-black dark:text-white">Featured
+                                    article</h2>
+                                    <h3 className="leading-tight text-3xl md:text-4xl text-black dark:text-white mt-12">
+                                        When to useMemo and useCallback</h3>
+                                    <div className="mt-6 text-xl font-medium text-blueGray-500">June 4th, 2019 — 13 min
+                                        read
+                                    </div>
+                                </div>
+                                <div className="mt-12 flex items-center justify-between"><a
+                                        className="text-primary inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition"
+                                        href="/blog/usememo-and-usecallback"><span className="mr-8 text-xl font-medium">Read full article<div
+                                        className="focus-ring absolute inset-0 left-0 right-0 z-10 rounded-lg md:-left-12 md:-right-12 lg:left-0 lg:right-0"></div></span>
+                                    <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                        <div className="absolute text-gray-200 dark:text-gray-600">
+                                            <svg width="60" height="60">
+                                                <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28"
+                                                        cx="30" cy="30"></circle>
+                                                <circle className="text-primary" stroke="currentColor" stroke-width="2"
+                                                        fill="transparent" r="28" cx="30" cy="30"
+                                                        style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                                        transform-origin="30px 30px"
+                                                        stroke-dashoffset="175.92918860102841"></circle>
+                                            </svg>
+                                        </div>
+                                        <span style="transform: none;"><svg className="transform -rotate-90" width="32"
+                                                                            height="32" viewBox="0 0 32 32" fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                fill="currentColor"></path></svg></span></div>
+                                </a></div>
+                            </div>
+                            <div className="relative col-span-full mt-12 lg:col-span-4 lg:col-start-8">
+                                <div className="aspect-w-4 aspect-h-3 lg:aspect-h-5 lg:aspect-w-4"><img
+                                        src="data:image/webp;base64,UklGRhgDAABXRUJQVlA4WAoAAAAgAAAAYwAAQgAASUNDUDACAAAAAAIwQURCRQIQAABtbnRyUkdCIFhZWiAHzwAGAAMAAAAAAABhY3NwQVBQTAAAAABub25lAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLUFEQkUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApjcHJ0AAAA/AAAADJkZXNjAAABMAAAAGt3dHB0AAABnAAAABRia3B0AAABsAAAABRyVFJDAAABxAAAAA5nVFJDAAAB1AAAAA5iVFJDAAAB5AAAAA5yWFlaAAAB9AAAABRnWFlaAAACCAAAABRiWFlaAAACHAAAABR0ZXh0AAAAAENvcHlyaWdodCAxOTk5IEFkb2JlIFN5c3RlbXMgSW5jb3Jwb3JhdGVkAAAAZGVzYwAAAAAAAAARQWRvYmUgUkdCICgxOTk4KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWFlaIAAAAAAAAPNRAAEAAAABFsxYWVogAAAAAAAAAAAAAAAAAAAAAGN1cnYAAAAAAAAAAQIzAABjdXJ2AAAAAAAAAAECMwAAY3VydgAAAAAAAAABAjMAAFhZWiAAAAAAAACcGAAAT6UAAAT8WFlaIAAAAAAAADSNAACgLAAAD5VYWVogAAAAAAAAJjEAABAvAAC+nFZQOCDCAAAAEAcAnQEqZABDAD6dSJ1KOK+soaoUalMQE4lpBvjnhsoqkbZkLPsZbQI7x+ZjpA2NTxVcwMCywYvDRr2gfYmpA4AA/n97J94pV1A4E2SK8MZ0zjLGfqfclMxup7wZb7OBBgFh0k4C7iEFs/gYGB+e4p8UC/cx26fjQgAFfhdrKhIZFai7bS+v89KMpeQbEUhhojvtrTKF8o33cMGXXQBrPXACV8fBNT1dirGbJmrCEgqv9ok1pqX98/8dOxSlxbsAAAA="
+                                        className="rounded-lg object-cover object-center" alt="by Jp Valery">
+                                    <div className="rounded-lg object-cover object-center backdrop-blur-xl"></div>
+                                    <img className="rounded-lg object-cover object-center transition-opacity"
+                                         alt="by Jp Valery"
+                                         src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_1200,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f"
+                                         srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/w_300,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f 300w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_600,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f 600w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_900,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f 900w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_1700,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f 1700w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_2500,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1554672723-b208dc85134f 2500w"
+                                         sizes="(max-width: 1023px) 80vw, (min-width:1024px) and (max-width:1620px) 25vw, 410px">
+                                    <noscript></noscript>
+                                </div>
+                                <div className="absolute left-6 top-6 z-20 h-4 w-4 rounded-full bg-team-current p-1"></div>
+                                <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-20">
+                                    <span className="hidden lg:inline">Click to copy url</span><span
+                                        className="inline lg:hidden"><svg width="24" height="24" fill="none"
+                                                                          viewBox="0 0 24 24"><path
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                                        width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="relative mx-10vw">
+        <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl mb-64">
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-blue"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/remix-the-yang-to-react-s-yin">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRhIBAABXRUJQVlA4IAYBAADwDACdASpkAEMAPp1EnEm4sikhLbmZMxATiWcGcAzuXlQnXhFdl5LEiQOky3ly1yV8GpkKhcOe29tCRes9Wq2B0o77rXPs4E7nP3OwsAut/3CV7hg0rWITIibQzrFimy9P75HvBw34tjD6PevHThAAAP75ZVFI3/anWDpkp4M/wtOEf4zH6BM6/3V5YRlrJAnnjY2oJm52jaFHH7wWg3Hi94EMy+E6NkpjelGc83YxIgzfl47RBYgu8SJoKpvrPUIf+wHyhaHPVB619/G2h4w4FiIBi2qWwJlWI3cVM289RBL4vF0ekeF0HIo+/eVxC0X/YIfB7ejH7w6UcEXF2KXw1meTAAAA"
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="yellow and black fish in water">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Remix: The Yang to React's Yin" alt="yellow and black fish in water"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1604845029162-cfa4b9a1550f 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">March 24th, 2022 — 11 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Remix: The Yang to
+                        React's Yin
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/how-i-help-you-build-better-websites">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRggBAABXRUJQVlA4IPwAAAAwCgCdASpkAEMAPrlOoEszOLEhq/dtExAXCWkGcBjrYtd69huTwQmKzLTTZI4YXnfsVSbiWagGK3feWOoRNIP/not5dwlobo45orkaFKRlWPG4cW3FjsbZcQAA/vRicHrAF4ThT3zRHU+COw82gLA9Zqie07bv7rZcw7bTRhxbWQqBDpDlqlxCC3kUFoZVHxRgBae2l3sr2IZpGXInt9aaX2OhiFpP4OeVEnTe32QjEyzQWhy0YDXL0gEcSd67VTSUkOmOWcSaOdQt3db/2dsU2SfJCiqtDNytyZr9HqWujFwkfXfC7BcUoPXQHszpFJ8ZMXpSzxeYTTvkAAA="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="Kent on stage raising his hand with the Remix logo behind him">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="How I help you build better websites"
+                             alt="Kent on stage raising his hand with the Remix logo behind him"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-help-you-build-better-websites/kent-speaking-about-remix 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">November 15th, 2021 — 5 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">How I help you
+                        build better websites
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-red"><a
+                        className="focus:outline-none group peer relative block w-full" href="/blog/why-i-love-remix">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAAAwCACdASpkAEsAPp1GnEslrykhpnScAeATiWcAxYSB0pcEEAT1uIzpkzAeN6p0RISEKg7fr1KQXSyI+gsaLwAEGfjkGi17yzKwQAD+9WmlrjBeKE+frjqBCuX1CMj43CKWjuVmpwUheplrn5s/Z8lNryFj09H/QthEzbqW2MDYRogKctXx9cGjd2RyB870F3d04BCbdzMTnvj0SlB10YTRTZee5V0y1BV5J+eFkS49GHrXXfA7bbVzR0FEpTlsYMS0eWt/IWfgIVPdmFsgDIEz6MnMiNAZ7Gap5tgF2aNw+v82W3IloBOF43YZcIbK7wAAAA=="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="blue and black compact disc">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Why I Love Remix" alt="blue and black compact disc"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1587096473086-abb7a1ec4393 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">November 13th, 2021 — 10 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Why I Love Remix
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/the-state-initializer-pattern">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBgCdASpkAEMAPrlQn0w8qKMiKTzL05AXCWkG+AAHmOki9ZMlBZNr4ec9gBCUvBY+qG2qnxTidABMunyKh4AA/u/1mI0QWiTiLwfrk42RPpph6m1Sjyjou2i7LrLy2MX2D3yaz4JapMC9g/Z+8vqOz6qQQKpIuRkIjmlfZN+QOG093js4uY1dXQoOTv8328kxn3IgcSdXB30AX5Eo1gAA"
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="white abstract geometric artwork">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="The State Initializer Pattern" alt="white abstract geometric artwork"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1455612693675-112974d4880b 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">November 5th, 2021 — 6 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">The State
+                        Initializer Pattern
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-red"><a
+                        className="focus:outline-none group peer relative block w-full" href="/blog/how-to-react">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAwBwCdASpkADIAPrlUoUu/pSchqTv8A/AXCWcAzfwTDQrWTzDf4iwRnxIsZAP4QjvNQbEgqCR5me/fualbHS+tlAAA/u5Uj8Vlu55rnCq2k5XhseFY7/PdOfT939CZSzlrar8/nGmOGStXxKaEHi823XgKPB/9p9kkutwCHaXQqFr5wliON/z7Mre4lSitTy6beYY3NByFbvAIYoeX8FqU/UErjU16wpCqJX1bvuOcyXgA"
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="by Artem Sapegin">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="How to React ⚛️" alt="by Artem Sapegin"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1515997855079-97ffd6a7775e 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">November 3rd, 2021 — 8 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">How to React ⚛️
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/get-a-catch-block-error-message-with-typescript">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRlIBAABXRUJQVlA4IEYBAACQDgCdASpkAEIAPrlOn0snOK2hsHHMsxAXCWcAzDofhbcTEAaXVx2eSJBzl1FI4PsBhjC0mJpyqFCYKqMtkKcldBqLlBXH5tks4EesHBbcwmQtLVuaJug5EpYd2Jg2wctB0VtCI12O4yBBEj4wlow2GP8/KpGzDG//K/q+YADL6K3ZBbuLsHv+btleeFd86jNg7XkblZTPXd5p1Id+5xNhkkY8xwsJ0UhWlCSNzluD75C4NqAkJ2LoIrnIXS4P1/KE1RXleEy+9/v+3vGqv1eAihURUs/TqUxrI8a0AijigqKn5K4lS73P4e5/HQLYVOHYKqJtHgmT7alc7zrP1QjhxRR0bGKQfuVNDgRAs9YrTN5JLUHXl1u0GMtoCWYijr3pQOBJabEmmGpXLTqHs+hH2PMa8+mZPbSlOVETaEBi1bulCmYAAA=="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="brown and white cat in shallow focus shot">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Get a catch block error message with TypeScript"
+                             alt="brown and white cat in shallow focus shot"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1525785967371-87ba44b3e6cf 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">October 28th, 2021 — 5 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Get a catch block
+                        error message with TypeScript
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/building-an-awesome-image-loading-experience">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAADwCgCdASpkAEMAPq1Cm0otrikrtRvKqcAViWkAz2nhwgXX13NFMxMyGNCWhOHCzdPw+yvl8POIZIwFskZ8W8/yTwqAgJlFzTeqh/DhBDoDTKMpifPj1CALqgVCCxj+31AA/u/Y0L92ySjySVRXNg6rkHPwUBIeTfxTyOZx7FairWDPysfh0O9mqkU+ta/dR3A/rDS4OxGuoP3vzGrfu+tklBsdGZ6ayYUh/QBZtjXbVpV429DgM37pbaGjEWec6qi39yNf9JgCVy1mBxcqpHbUQttDgjYKkcTxf1OmgSHMrHvea7Asr/BB6QagnPQ4nERV7OFnHWhjn4HgZ+YXQAAA"
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="frosted glass window">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Building an awesome image loading experience" alt="frosted glass window"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1541969358822-1567cdf1a2a4 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">October 19th, 2021 — 13 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Building an
+                        awesome image loading experience
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-red"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/how-remix-makes-css-clashes-predictable">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRhABAABXRUJQVlA4IAQBAACwCwCdASpkAEMAPrlEnUoppyYrr50rGXAXCWkAz2nkAbsOQqmHxDfWNBpEfOBFCluKaeTr1mRZo+qBHzQENXd2qRKnIL2zWkbeq14o33kZ9awcGi0yv6QHuZkrOEKz8CapV19KMAAA/vRmTNvOMUZxkvsTPHuKx2eksSDAIm/Lp6Ii7c3LfSq5zGpyr6htQiowMtbd9SpB3OoYz2sq/2RJdjNQfu+uLZBbuNBvFoan6kHQOHzeQfpbxsZp5Z6mtn0SmY4J1Hv80Mro3lAnFdtEGgY90sASFTrjO57LH+cdJhQ3WUDktZTHK+tUe67nnVcayDhGtGRVymW7e2N2DKLWgTIAAA=="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="white police car in wall">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="How Remix makes CSS clashes predictable" alt="white police car in wall"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1543393716-375f47996a77 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">October 13th, 2021 — 7 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">How Remix makes
+                        CSS clashes predictable
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/introducing-the-new-kentcdodds.com">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRlIDAABXRUJQVlA4WAoAAAAgAAAAYwAAQgAASUNDUCQCAAAAAAIkYXBwbAQAAABtbnRyUkdCIFhZWiAH3wAKAA4ADQAIADlhY3NwQVBQTAAAAABBUFBMAAAAAAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWFwcGzluw6YZ71GzUu+RG69G3WYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApkZXNjAAAA/AAAAGVjcHJ0AAABZAAAACN3dHB0AAABiAAAABRyWFlaAAABnAAAABRnWFlaAAABsAAAABRiWFlaAAABxAAAABRyVFJDAAAB2AAAACBjaGFkAAAB+AAAACxiVFJDAAAB2AAAACBnVFJDAAAB2AAAACBkZXNjAAAAAAAAAAtEaXNwbGF5IFAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTUAAFhZWiAAAAAAAADzUQABAAAAARbMWFlaIAAAAAAAAIPfAAA9v////7tYWVogAAAAAAAASr8AALE3AAAKuVhZWiAAAAAAAAAoOAAAEQsAAMi5cGFyYQAAAAAAAwAAAAJmZgAA8rAAAA1QAAATtgAACfxzZjMyAAAAAAABDEIAAAXe///zJgAAB5MAAP2Q///7ov///aMAAAPcAADAblZQOCAIAQAAkAkAnQEqZABDAD6dSp1MOK+2KqO0C5sQE4lnAYYCN9+rAE4pXECYG5HBfUXKJkV8CCTjanwP8OGwi3zTFYibquZxASSoc8MD3Q11NhiWZswvIy/YAAD+41Fl7ivvZfr7kbwBx59CcxOp08MSH31Zi1NRK/f1dnbvk4VZm24D8572DKvUMmF9NRusUj2HubxBb7m4qKYP/MALmjsm5SGEwcmo+/DaKtV8kAtwK3I2Sf6D6WFKEjClktSn72VRMWBhl+h3DTB2ynVZUjqOc5MpC6TlFH45Bsc8onbQ7f8gjItFAcZfQVLMLp7C0vTdV8gY1yMwDAyM0LE/AkxKovgEBOJ5MhGAAAAA"
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="Kent riding on a onewheel in the outdoors">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Introducing the new kentcdodds.com" alt="Kent riding on a onewheel in the outdoors"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kent/riding-onewheel-outdoors-fast 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">October 4th, 2021 — 7 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Introducing the
+                        new kentcdodds.com
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-yellow"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/how-i-built-a-modern-website-in-2021">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAAAQDQCdASpkAEMAPrFGmko7qyWhsls9U3AWCWkGcA01nlwbK5buwWRoA3koD7+5vLBXAtOMrneG2GT90JyrLz+2XeotIAEq5PL4F0N1qTRIJ7LnMa5Zcre8UaDTMRtFt14eXNoGYkhNSt0REMN2PN4FwAD+7s4jHeyE9BXykzZMxIuwC4FSp408GYxRjoczsMvwZlqrnzr4cuA6X6MspvaoVHUro1XNU1SNxrLKLjhZrJ3GmlyoorlW1L532OP9tbhOeQgFiDwE81g+CH4d16xfOjEGrpus0wYxdunoI7Nokc5fnyoAw8pKJEq6cW3Yp4rqZw9fosV61qnAN+ViAH+WOzoqC6R90AA="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="MacBook Pro on top of brown table">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="How I built a modern website in 2021" alt="MacBook Pro on top of brown table"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/how-i-built-a-modern-website-in-2021/banner_iplhop 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">September 29th, 2021 — 34 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">How I built a
+                        modern website in 2021
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-blue"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/how-to-use-react-context-effectively">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRgIBAABXRUJQVlA4IPYAAAAwCACdASpkAEMAPp1Kn0wsL6aiJJZqIfATiWUAyfSSgEc/GtT0mHKdzHFLl3LiEpsZRLNOBmqxnXaeaEKRhCTa4qdPXztUj3OQAAD+71Ev/6tD/+QZ//IM/aR/2p87fCg/zbiOendFqmjcLvFs1XKBG2LnlMO8i4JGnXqU2LbV1AdRG3n4LGiPD1M13AHcj8foCIYljpkQ23VEwS90Uu5o4oJhKgDzE8P/CtmRPahoXVponQRTLHexVS42NzUeoleskN5k5hTEbFkmQhDbTzbbB7fx/e5R4lPhc+xfSGP9nTUHJcXnqHxkyj+XbqYfiIm/ST8kAAA="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="by Pathum Danthanarayana">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="How to use React Context effectively" alt="by Pathum Danthanarayana"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/unsplash/photo-1534870439272-475575042b61 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">June 5th, 2021 — 11 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">How to use React
+                        Context effectively
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+            <div className="col-span-4 mb-10">
+                <div className="relative w-full set-color-team-current-blue"><a
+                        className="focus:outline-none group peer relative block w-full"
+                        href="/blog/static-vs-unit-vs-integration-vs-e2e-tests">
+                    <div className="aspect-h-4 aspect-w-3 rounded-lg"><img
+                            src="data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAABQCACdASpkAC4APp08m0iwpqKhLD37EhATiWkA1UXnwVtleT07q4FuaRn9dkKY3jg98Y+RU9GDzr7AGvr8Wa+NQs8E00qPi4wdHYAA/vcey7UgpeorW55D7RRfQ5V/1FtaahFlyN9knZ+ASgOBtUro/v5MucA8aIZoWzymp/wAAA=="
+                            className="focus-ring w-full rounded-lg object-cover object-center transition"
+                            alt="Screenshot from TestingJavaScript.com">
+                        <div className="focus-ring w-full rounded-lg object-cover object-center transition backdrop-blur-xl"></div>
+                        <img title="Static vs Unit vs Integration vs E2E Testing for Frontend Apps"
+                             alt="Screenshot from TestingJavaScript.com"
+                             src="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_955,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner"
+                             srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_280,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 280w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_560,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 560w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_840,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 840w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1100,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 1100w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1300,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 1300w, https://res.cloudinary.com/kentcdodds-com/image/upload/c_fill,w_1650,ar_3:4,q_auto,f_auto,b_rgb:e6e9ee/kentcdodds.com/content/blog/unit-vs-integration-vs-e2e-tests/banner 1650w"
+                             sizes="(max-width:639px) 80vw, (min-width:640px) and (max-width:1023px) 40vw, (min-width:1024px) and (max-width:1620px) 25vw, 420px"
+                             className="focus-ring w-full rounded-lg object-cover object-center transition transition-opacity">
+                        <noscript></noscript>
+                    </div>
+                    <div className="mt-8 text-xl font-medium text-blueGray-500">June 3rd, 2021 — 12 min read</div>
+                    <div className="text-2xl font-medium md:text-3xl text-black dark:text-white mt-4">Static vs Unit vs
+                        Integration vs E2E Testing for Frontend Apps
+                    </div>
+                </a>
+                    <div className="absolute right-6 top-6 z-10 h-4 w-4 rounded-full bg-team-current p-1 lg:left-6"></div>
+                    <button className="focus:outline-none whitespace-nowrap rounded-lg bg-white p-3 text-lg font-medium text-black shadow ring-team-current transition hover:opacity-100 hover:shadow-md hover:ring-4 focus:opacity-100 focus:ring-4 group-hover:opacity-100 peer-hover:opacity-100 peer-focus:opacity-100 lg:opacity-0 lg:px-8 lg:py-4 absolute left-6 top-6 z-10">
+                        <span className="hidden lg:inline">Click to copy url</span><span className="inline lg:hidden"><svg
+                            width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor"
+                                                                                         stroke-linecap="round"
+                                                                                         stroke-linejoin="round"
+                                                                                         stroke-width="1.5"
+                                                                                         d="M6.5 15.25V15.25C5.5335 15.25 4.75 14.4665 4.75 13.5V6.75C4.75 5.64543 5.64543 4.75 6.75 4.75H13.5C14.4665 4.75 15.25 5.5335 15.25 6.5V6.5"></path><rect
+                            width="10.5" height="10.5" x="8.75" y="8.75" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect></svg></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="mb-64 flex w-full justify-center">
+        <button className="group relative inline-flex text-lg font-medium focus:outline-none opacity-100 disabled:opacity-50 transition">
+            <div className="focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50 border-secondary bg-primary border-2 group-hover:border-transparent group-focus:border-transparent"></div>
+            <div className="relative flex h-full w-full items-center justify-center whitespace-nowrap text-primary space-x-5 px-11 py-6">
+                <span>Load more articles</span>
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                          d="M12 5.75V18.25"></path>
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                          d="M18.25 12L5.75 12"></path>
+                </svg>
+            </div>
+        </button>
+    </div>
+    <div className="relative mx-10vw">
+        <div className="relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl">
+            <div className="col-span-full lg:col-span-5"><img alt="Illustration of a kayak"
+                                                              src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_856,q_auto,f_auto/kentcdodds.com/illustrations/rowing"
+                                                              srcSet="https://res.cloudinary.com/kentcdodds-com/image/upload/w_350,q_auto,f_auto/kentcdodds.com/illustrations/rowing 350w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_512,q_auto,f_auto/kentcdodds.com/illustrations/rowing 512w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_1024,q_auto,f_auto/kentcdodds.com/illustrations/rowing 1024w, https://res.cloudinary.com/kentcdodds-com/image/upload/w_1536,q_auto,f_auto/kentcdodds.com/illustrations/rowing 1536w"
+                                                              sizes="80vw, (min-width: 1024px) 30vw, (min-width:1620px) 530px">
+            </div>
+            <div className="col-span-full mt-4 lg:col-span-6 lg:col-start-7 lg:mt-0"><h2
+                    className="leading-tight text-3xl md:text-4xl text-black dark:text-white mb-8">More of a
+                listener?</h2>
+                <p className="leading-tight text-3xl md:text-4xl text-gray-400 dark:text-blueGray-500 mb-16">
+                    Check out my podcast Chats with Kent and learn about software
+                    development, career, life, and more.
+                </p>
+                <a className="text-primary inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition"
+                   href="/chats"><span className="mr-8 text-xl font-medium">Check out the podcast</span>
+                    <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                        <div className="absolute text-gray-200 dark:text-gray-600">
+                            <svg width="60" height="60">
+                                <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                        cy="30"></circle>
+                                <circle className="text-primary" stroke="currentColor" stroke-width="2"
+                                        fill="transparent" r="28" cx="30" cy="30"
+                                        style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                        transform-origin="30px 30px" stroke-dashoffset="175.92918860102841"></circle>
+                            </svg>
+                        </div>
+                        <span style="transform: none;"><svg className="transform -rotate-90" width="32" height="32"
+                                                            viewBox="0 0 32 32" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                                                                                                     clip-rule="evenodd"
+                                                                                                     d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                                                                                     fill="currentColor"></path></svg></span>
+                    </div>
+                </a></div>
+        </div>
+    </div>
+</div>
+<div className=" h-40 lg:h-48"></div>
+<footer className="border-t border-gray-200 pb-16 pt-48 dark:border-gray-600">
+    <div className="relative mx-10vw">
+        <div className="relative mx-auto grid max-w-7xl grid-cols-4 grid-rows-max-content gap-x-4 md:grid-cols-8 xl:grid-cols-12 xl:gap-x-6">
+            <div className="col-span-full md:col-span-3 xl:row-span-2">
+                <div>
+                    <div className="text-xl font-medium md:text-2xl text-black dark:text-white">Kent C. Dodds</div>
+                    <p className="text-secondary mt-6 max-w-md text-2xl">Full time educator making our world better</p>
+                    <div className="text-secondary mt-6 flex items-center justify-between gap-4 xl:flex-col xl:items-start">
+                        <div className="flex gap-4"><a href="https://github.com/kentcdodds"
+                                                       className=" text-primary focus:outline-none hover:text-team-current focus:text-team-current">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><title>GitHub</title>
+                                <path fill="currentColor"
+                                      d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+                            </svg>
+                        </a><a href="https://youtube.com/c/KentCDodds-vids/videos"
+                               className=" text-primary focus:outline-none hover:text-team-current focus:text-team-current">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><title>YouTube</title>
+                                <path fill="currentColor"
+                                      d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"></path>
+                            </svg>
+                        </a><a href="https://twitter.com/kentcdodds"
+                               className=" text-primary focus:outline-none hover:text-team-current focus:text-team-current">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><title>Twitter</title>
+                                <path fill="currentColor"
+                                      d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path>
+                            </svg>
+                        </a><a href="https://kentcdodds.com/blog/rss.xml"
+                               className=" text-primary focus:outline-none hover:text-team-current focus:text-team-current">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><title>RSS</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M7.33465 15.52C6.23018 15.52 5.33459 16.4153 5.33459 17.5199C5.33459 18.6244 6.23018 19.5201 7.33465 19.5201C8.43912 19.5201 9.33471 18.6244 9.33471 17.5199C9.33471 16.4153 8.43912 15.52 7.33465 15.52Z"
+                                      fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.33472 10.52V13.0919C8.87972 13.0919 11.7639 15.9753 11.7639 19.5202H14.3347C14.3347 14.5577 10.2973 10.52 5.33472 10.52Z"
+                                      fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M5.33472 5.52002V8.18702C11.5846 8.18702 16.6688 13.2701 16.6688 19.52H19.3347C19.3347 11.8001 13.0546 5.52002 5.33472 5.52002Z"
+                                      fill="currentColor"></path>
+                            </svg>
+                        </a></div>
+                        <div className="text-secondary relative flex w-24 items-center xl:mt-20 xl:w-32">
+                            <svg width="208" height="110" viewBox="0 0 208 110" className="absolute block w-full"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m10.7 8.7c-0.4 4.3-2.7 19-5.2 32.7s-4.5 25.7-4.5 26.5c0 2.6 1.6 4.2 3.3 3.5 2.1-0.8 2.2-2.4 0.2-2.4-1.2 0-1.5-0.7-1-3.3 0.3-1.7 1.2-6.8 1.9-11.2 1.1-7 1.5-8 3.2-7.7 10.1 1.7 21.1 1.2 43.4-2.2 28.3-4.2 50-6.9 50.7-6.3 0.2 0.3-0.1 3.3-0.7 6.7s-0.9 6.4-0.6 6.7c1.2 1.3 2.4-1.1 2.9-6.3 0.3-3.1 1-6.1 1.5-6.6 0.6-0.6 9.9-1.8 20.9-2.8 33-3.1 38.7-3.4 38-2.3-0.4 0.6-1.9 1.4-3.4 1.8-1.6 0.3-8 2.6-14.3 5-6.3 2.5-23.2 8.7-37.5 13.9s-33.2 12.2-42 15.6c-28.5 10.9-50.4 19-51.5 19-0.5 0-1 0.4-1 1 0 0.5 0.2 1 0.4 1 1.2 0 28-9.7 60.6-22 20.6-7.8 42.5-15.9 48.5-18 6.1-2.1 13.6-4.8 16.8-6s6-2 6.3-1.8c0.2 0.3-0.5 1.7-1.6 3.1-1.2 1.4-2.7 4.3-3.4 6.4-1.1 3.2-1.7 3.8-4.5 3.9-3.9 0.2-7.1 2.9-7.1 6 0 2.3 2.5 4.4 4.5 3.9 0.6-0.2 2.2-0.6 3.8-0.9 4.2-1 3.2-2.5-1.3-1.9-3.6 0.5-4 0.3-4-1.5 0-2.9 4.4-4 6.9-1.8 1.7 1.5 1.8 1.3 3-3.7 0.6-2.9 2.3-7 3.6-9 1.4-2 2.5-4.2 2.5-5s1.9-1.9 4.3-2.7c2.3-0.6 7.1-2.5 10.7-4.2 5-2.2 6.1-3.1 5-3.8-2.5-1.6-12-1.2-46.6 2-37.5 3.5-49.3 4.9-71.9 8.5-28.1 4.4-43.5 4.3-43.5-0.3 0-2.9 13.9-15.2 26.9-24 10.2-6.9 12.5-8.1 13.8-7 1.2 1 1.8 0.8 3.4-1.2 2.3-3.1 2.4-4 0.1-4-4 0-27.1 15.3-37.3 24.7-3.5 3.3-5.9 4.9-5.9 4 0-0.8 0.9-5.9 2-11.2 2-9.9 2.7-22.5 1.1-22.5-0.4 0-1.1 3.5-1.4 7.7z"></path>
+                                <path d="m165.1 40.7c-0.7 1.6-1.6 5.4-1.9 8.6-0.5 5.6-0.6 5.8-2.9 5.2-3.2-0.8-8.6 2.6-11.4 7.1-2.6 4.2-1.5 6.1 2.8 4.9 1.5-0.5 3.3-0.7 3.8-0.6 0.6 0.2 8.2 1.8 17 3.6 26.5 5.5 31.5 6.8 31.5 8 0 1.6-15.1 4-41 6.5-33.2 3.2-75.6 9.8-115.5 18-8.2 1.7-19.2 3.4-24.2 3.7-2.2066 0.132-5.0134 0.952-8.2618-0.36-1.2736-0.678-2.2382-1.25-0.5001-3.327 0.1923-0.577-0.7381-2.1132-2.0381-1.013-2 1.7-1.9 3.3 0.3 5.3 3 2.7 13.2 2.1 35.4-2.2 51.6-10 83.4-14.9 118.3-18.1 12.7-1.2 26.1-2.8 29.9-3.6 6.7-1.3 11.6-3.6 11.6-5.3 0-2.1-17.4-6.7-40.3-10.7-5.3-1-9.6-2.2-9.4-2.8 0.4-1.3 18.2-7.2 27.4-9.1 3.9-0.8 8.6-1.2 10.4-0.8 2.5 0.5 3.1 0.3 2.7-0.8-1-2.9-20.9 0-32 4.6-1.5 0.6-1.8 0.1-1.8-3.2 0-2.1 0.7-6.5 1.5-9.6 1.8-6.8 1.7-6.7 0.7-6.7-0.5 0-1.4 1.2-2.1 2.7zm-3.1 17.3c0 0.5-2 1.9-4.5 3.1s-4.8 2.5-5.1 3c-0.7 1.3-2.4 1.1-2.4-0.2 0-2.2 6.2-6.9 9.1-6.9 1.6 0 2.9 0.4 2.9 1z"></path>
+                                <path d="m84.2 49.6c-2.4 1.6-3 5.4-0.9 5.4 2.4 0 10.7-3.2 10.7-4.1 0-1.2-0.1-1.2-4.3 0.6-4.3 1.8-4.7 1.8-4.7 0.5 0-0.6 1.1-1.5 2.5-2s2.5-1.2 2.5-1.5c0-1.1-3.7-0.4-5.8 1.1z"></path>
+                                <path d="m27.6 54.4c-2.9 2.5-6.6 4.6-8 4.8-1.5 0.2-2.5 0.7-2.4 1.3 0.5 1.7 7.9 0.5 13.7-2.1 6.5-2.9 7.3-3 8.9-0.4 1.2 2 4.6 2.7 5.6 1.1 0.3-0.5-0.5-1.2-1.8-1.5s-2.6-1.5-2.9-2.7c-0.4-1.6-1.1-1.9-2.6-1.4-1.7 0.5-2.1 0.2-2.1-1.4 0-3.2-2.4-2.5-8.4 2.3zm5.1 0.3c-0.9 0.9-1.9 1.4-2.3 1.1-1-1 0.6-2.8 2.4-2.8 1.5 0 1.5 0.1-0.1 1.7z"></path>
+                                <path d="m59.2 52.3c-2.5 2.7-3 7.7-0.8 7.7 0.9 0 1.6-1.2 1.8-2.7 0.2-1.9 1.2-3.2 3.1-4.1 1.5-0.7 2.5-1.7 2.2-2.3-1.1-1.6-4.1-1-6.3 1.4z"></path>
+                                <path d="m116.1 57.6c-4.4 3.7-4.1 5.8 0.5 5.1 4.3-0.7 11.7-5.3 10.9-6.7-1.3-2.1-8.3-1.1-11.4 1.6zm6.9 0.2c0 0.9-4.4 3.2-6 3.2-2.3 0-0.7-2 2.3-2.9 1.7-0.5 3.3-1 3.5-1 0.1-0.1 0.2 0.3 0.2 0.7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-span-full mt-20 md:col-span-5 md:col-start-1 xl:hidden">
+                <div>
+                    <div className="text-lg font-medium text-black dark:text-white">Stay up to date</div>
+                    <div className="mt-4 max-w-md">
+                        <p className="max-w-full text-lg text-secondary">
+                            Subscribe to the newsletter to stay up to date with articles,
+                            courses and much more!
+                            <a className="text-secondary underlined hover:text-team-current focus:text-team-current"
+                               href="/subscribe">Learn more<!-- -->
+                                <svg className="inline-block transform -rotate-135" width="32" height="32"
+                                     viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                          fill="currentColor"></path>
+                                </svg>
+                            </a></p>
+                    </div>
+                    <form method="post" action="/action/convert-kit" encType="application/x-www-form-urlencoded"
+                          className="mt-8 space-y-4" noValidate=""><input type="hidden" name="formId"
+                                                                          value="newsletter"><input type="hidden"
+                                                                                                    name="convertKitTagId"
+                                                                                                    value=""><input
+                            type="hidden" name="convertKitFormId" value="827139">
+                        <div className="mb-8">
+                            <div className="mb-4 flex items-baseline justify-between gap-2"><label htmlFor="2-firstName"
+                                                                                                   className="inline-block text-lg text-gray-500 dark:text-blueGray-500">First
+                                name</label></div>
+                            <input autoComplete="firstName" required="" name="firstName" id="2-firstName"
+                                   className="placeholder-gray-500 dark:disabled:text-blueGray-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                   value=""></div>
+                        <div className="mb-8">
+                            <div className="mb-4 flex items-baseline justify-between gap-2"><label htmlFor="3-email"
+                                                                                                   className="inline-block text-lg text-gray-500 dark:text-blueGray-500">Email</label>
+                            </div>
+                            <input autoComplete="email" name="email" id="3-email" required=""
+                                   className="placeholder-gray-500 dark:disabled:text-blueGray-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                   value=""></div>
+                        <button type="submit"
+                                className="text-primary inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition pt-4">
+                            <span className="mr-8 text-xl font-medium">Sign me up</span>
+                            <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div className="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                                cy="30"></circle>
+                                        <circle className="text-primary" stroke="currentColor" stroke-width="2"
+                                                fill="transparent" r="28" cx="30" cy="30"
+                                                style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 0px 0px;"
+                                                transform-origin="0px 0px"
+                                                stroke-dashoffset="175.92918860102841"></circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;"><svg className="transform -rotate-90" width="32"
+                                                                    height="32" viewBox="0 0 32 32" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                        fill="currentColor"></path></svg></span></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div className="col-span-2 mt-20 md:col-start-5 md:row-start-1 md:mt-0">
+                <div>
+                    <div className="text-lg font-medium text-black dark:text-white">Contact</div>
+                    <ul className="mt-4">
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/contact">Email Kent</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/calls">Call Kent</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/office-hours">Office hours</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-span-2 mt-20 md:col-start-7 md:row-start-1 md:mt-0 xl:col-start-5 xl:row-start-2 xl:mt-16">
+                <div>
+                    <div className="text-lg font-medium text-black dark:text-white">General</div>
+                    <ul className="mt-4">
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/transparency">My Mission</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/transparency#privacy">Privacy policy</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/transparency#terms">Terms of use</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/conduct">Code of conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-span-full mt-20 md:col-span-2 md:col-start-7 xl:col-start-5 xl:row-span-2 xl:row-start-1 xl:ml-56 xl:mt-0">
+                <div>
+                    <div className="text-lg font-medium text-black dark:text-white">Sitemap</div>
+                    <ul className="mt-4">
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/">Home</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/blog">Blog</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/courses">Courses</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/discord">Discord</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/chats">Chats Podcast</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/workshops">Workshops</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/talks">Talks</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/about">About</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/credits">Credits</a></li>
+                        <li className="py-1"><a
+                                className="text-secondary underlined focus:outline-none inline-block whitespace-nowrap text-lg hover:text-team-current focus:text-team-current"
+                                href="/sitemap.xml">Sitemap.xml</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="col-span-4 col-start-9 row-span-2 row-start-1 mt-0 hidden xl:block">
+                <div>
+                    <div className="text-lg font-medium text-black dark:text-white">Stay up to date</div>
+                    <div className="mt-4 max-w-md">
+                        <p className="max-w-full text-lg text-secondary">
+                            Subscribe to the newsletter to stay up to date with articles,
+                            courses and much more!
+                            <a className="text-secondary underlined hover:text-team-current focus:text-team-current"
+                               href="/subscribe">Learn more<!-- -->
+                                <svg className="inline-block transform -rotate-135" width="32" height="32"
+                                     viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                          fill="currentColor"></path>
+                                </svg>
+                            </a></p>
+                    </div>
+                    <form method="post" action="/action/convert-kit" encType="application/x-www-form-urlencoded"
+                          className="mt-8 space-y-4" noValidate=""><input type="hidden" name="formId"
+                                                                          value="newsletter"><input type="hidden"
+                                                                                                    name="convertKitTagId"
+                                                                                                    value=""><input
+                            type="hidden" name="convertKitFormId" value="827139">
+                        <div className="mb-8">
+                            <div className="mb-4 flex items-baseline justify-between gap-2"><label htmlFor="4-firstName"
+                                                                                                   className="inline-block text-lg text-gray-500 dark:text-blueGray-500">First
+                                name</label></div>
+                            <input autoComplete="firstName" required="" name="firstName" id="4-firstName"
+                                   className="placeholder-gray-500 dark:disabled:text-blueGray-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                   value=""></div>
+                        <div className="mb-8">
+                            <div className="mb-4 flex items-baseline justify-between gap-2"><label htmlFor="5-email"
+                                                                                                   className="inline-block text-lg text-gray-500 dark:text-blueGray-500">Email</label>
+                            </div>
+                            <input autoComplete="email" name="email" id="5-email" required=""
+                                   className="placeholder-gray-500 dark:disabled:text-blueGray-500 focus-ring px-11 py-8 w-full text-black disabled:text-gray-400 dark:text-white text-lg font-medium bg-gray-100 dark:bg-gray-800 rounded-lg"
+                                   value=""></div>
+                        <button type="submit"
+                                className="text-primary inline-flex items-center text-left font-medium focus:outline-none cursor-pointer transition pt-4">
+                            <span className="mr-8 text-xl font-medium">Sign me up</span>
+                            <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
+                                <div className="absolute text-gray-200 dark:text-gray-600">
+                                    <svg width="60" height="60">
+                                        <circle stroke="currentColor" stroke-width="2" fill="transparent" r="28" cx="30"
+                                                cy="30"></circle>
+                                        <circle className="text-primary" stroke="currentColor" stroke-width="2"
+                                                fill="transparent" r="28" cx="30" cy="30"
+                                                style="stroke-dasharray: 175.929, 175.929; transform: rotate(-90deg); transform-origin: 30px 30px;"
+                                                transform-origin="30px 30px"
+                                                stroke-dashoffset="175.92918860102841"></circle>
+                                    </svg>
+                                </div>
+                                <span style="transform: none;"><svg className="transform -rotate-90" width="32"
+                                                                    height="32" viewBox="0 0 32 32" fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
+                                        fill="currentColor"></path></svg></span></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div className="col-span-full mt-24 text-lg text-gray-500 dark:text-blueGray-500 md:mt-44"><span>All rights reserved</span>
+                <span className="block md:inline">© Kent C. Dodds 2022</span></div>
+        </div>
+    </div>
+</footer>
+<script>(STORAGE_KEY => {
+    if (!window.history.state || !window.history.state.key) {
+        let key = Math.random().toString(32).slice(2);
+        window.history.replaceState({
+            key
+        }, "");
+    }
+
+    try {
+        let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+        let storedY = positions[window.history.state.key];
+
+        if (typeof storedY === "number") {
+            window.scrollTo(0, storedY);
+        }
+    } catch (error) {
+        console.error(error);
+        sessionStorage.removeItem(STORAGE_KEY);
+    }
+})("positions")</script>
+<link rel="modulepreload" href="/build/_shared/chunk-7JEQH6AN.js">
+<link rel="modulepreload" href="/build/_shared/chunk-MQDIOOED.js">
+<link rel="modulepreload" href="/build/_shared/chunk-XY4QKPGD.js">
+<link rel="modulepreload" href="/build/_shared/chunk-PW376BC6.js">
+<link rel="modulepreload" href="/build/_shared/chunk-KJJOIKWN.js">
+<link rel="modulepreload" href="/build/_shared/chunk-4IZ5B54X.js">
+<link rel="modulepreload" href="/build/_shared/chunk-YFSPF5H5.js">
+<link rel="modulepreload" href="/build/_shared/chunk-TZDTADOX.js">
+<link rel="modulepreload" href="/build/_shared/chunk-FSPEIFVJ.js">
+<link rel="modulepreload" href="/build/_shared/chunk-6DXVFXZU.js">
+<link rel="modulepreload" href="/build/_shared/chunk-AO5ZYW3K.js">
+<link rel="modulepreload" href="/build/_shared/chunk-XA3Z4COF.js">
+<link rel="modulepreload" href="/build/_shared/chunk-LMUNM6RL.js">
+<link rel="modulepreload" href="/build/_shared/chunk-IT4XQO33.js">
+<link rel="modulepreload" href="/build/_shared/chunk-4NX542KI.js">
+<link rel="modulepreload" href="/build/_shared/chunk-A5KPTDPP.js">
+<link rel="modulepreload" href="/build/_shared/chunk-N6AJ3WXT.js">
+<link rel="modulepreload" href="/build/_shared/chunk-4TL567D4.js">
+<link rel="modulepreload" href="/build/_shared/chunk-BDIW2EBY.js">
+<link rel="modulepreload" href="/build/_shared/chunk-SWQWOU4E.js">
+<link rel="modulepreload" href="/build/_shared/chunk-IIXQHP3C.js">
+<link rel="modulepreload" href="/build/_shared/chunk-K75YPN74.js">
+<link rel="modulepreload" href="/build/root-6DND2QZ6.js">
+<link rel="modulepreload" href="/build/_shared/chunk-O7ID2XDK.js">
+<link rel="modulepreload" href="/build/_shared/chunk-KE5BJKXZ.js">
+<link rel="modulepreload" href="/build/_shared/chunk-PSVAWMPQ.js">
+<link rel="modulepreload" href="/build/_shared/chunk-4XQDF5J4.js">
+<link rel="modulepreload" href="/build/_shared/chunk-IIXSBRE3.js">
+<link rel="modulepreload" href="/build/_shared/chunk-YTN3S3DN.js">
+<link rel="modulepreload" href="/build/_shared/chunk-CSGQV53R.js">
+<link rel="modulepreload" href="/build/_shared/chunk-AFMWYLVT.js">
+<link rel="modulepreload" href="/build/_shared/chunk-M7LB6AQ3.js">
+<link rel="modulepreload" href="/build/routes/blog-33IG4QJS.js">
+<script>window.ENV = {
+    "FLY": "true",
+    "NODE_ENV": "production",
+    "DISCORD_CLIENT_ID": "738096608440483870",
+    "PRIMARY_REGION": "dfw"
+};</script>
+</body>
+<script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+        unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+        'copy',
+        'cut',
+        'contextmenu',
+        'selectstart',
+        'mousedown',
+        'mouseup',
+        'mousemove',
+        'keydown',
+        'keypress',
+        'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+        if (unlock) {
+            e.stopPropagation()
+            if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+        }
+    }
+    copyEvents.forEach((evt) => {
+        document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+            capture: true,
+        })
+    })
+})()</script>
+</html>
